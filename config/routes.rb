@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  SiteController.action_methods.each do |action|
+    get "/#{action}", to: "site##{action}", as: "#{action}"
+  end
+
+  root to: "site#home"
 end
