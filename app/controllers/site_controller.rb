@@ -12,4 +12,8 @@ class SiteController < ApplicationController
     render
   end
 
+  def delete_account
+    render
+  end
+
 end

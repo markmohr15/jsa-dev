@@ -5,8 +5,8 @@ default: &default
 
 development:
   <<: *default
-  database: psd-call-jsa-dev_development
+  database: jsa-dev_development
 
 test:
   <<: *default
-  database: psd-call-jsa-dev_test
+  database: jsa-dev_test
